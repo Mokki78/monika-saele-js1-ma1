@@ -99,3 +99,41 @@ for(let i = 0; i < cats[i].name.length; i++){
 
 
 // Question 8
+
+const cats = [
+    {
+        name: "Blob",
+        age: 10
+    },
+    {
+        name: "Harold",
+    },
+    {
+        name: "Blurt",
+        age: 21
+    }
+];
+
+let cat = "";
+
+function CreateCats(cats) {
+
+    console.dir(cats);
+
+}
+
+for (var i = 0; i < cats.length; i++){
+    console.dir(cats[i]);
+
+    cat = cat + "<div>" + cats[i] + "</div>";
+    console.dir(cat)
+}
+
+const finalHTML = "h5" + cats.name + "</h5>" + "<p>" + cats.age + "</p>";
+
+console.dir(finalHTML);
+
+const container = document.querySelector(".cat-container");
+
+container.innerHTML = moreHTML;
+
