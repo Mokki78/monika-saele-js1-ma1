@@ -72,13 +72,30 @@ resultsContainer.style.backgroundColor = "yellow";
 
 // Question 7
 
-function list() {
-    const name = 
+const cats = [
+    {
+        name: "Blob",
+        age: 10
+    },
+    {
+        name: "Harold",
+    },
+    {
+        name: "Blurt",
+        age: 21
+    }
+];
+
+function list(cats) {
+    console.dir(cats);
+  
 }
 
+list(cats);
 
-
-
+for(let i = 0; i < cats[i].name.length; i++){
+    console.dir(cats[i].name)
+}
 
 
 // Question 8
